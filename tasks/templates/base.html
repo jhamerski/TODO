@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">TODO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% if user.is_authenticated%}
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Tarefas</a>
+                </li>
+                <li class="nav-item>">
+                    <a class="nav-link" href="#">Usuários</a>
+                </li>
+                {% else %}
+                <li class="nav-item>">
+                    <a class="nav-link" href="/accounts/login">Entrar</a>
+                </li>
+                {% endif %}
+                <li class="nav-item>">
+                    <a class="nav-link" href="#">Sobre Nós</a>
+                </li>
+                {% if user.is_authenticated%}
+                <li class="nav-item>">
+                    <a class="nav-link" href="/accounts/logout">Sair</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        {% if user.is_authenticated%}
+            <a class="navbar-usuario" style="text-decoration:none">Seja bem vindo: {{ request.user|upper }}</a>
+        {% endif %}
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <p>Jonas - TODO</p>
+    </footer>
+</div>
+
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+</body>
+</html>

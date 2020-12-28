@@ -1,0 +1,244 @@
+h1 {
+    color: red;
+}
+
+.container-fluid{
+    padding 0;
+}
+
+/* Navbar */
+.navbar-usuario {
+    text-align: right;
+    font-weight: bold;
+    float: right;
+    text-decoration: none;
+}
+
+.navbar {
+    border-bottom: 1px solid #333;
+    margin-botton: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* dashboard */
+.dashboard {
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+.dashboard h4 {
+    font-size; 20px;
+}
+
+.dashboard span {
+    font-size; 40px;
+    display: block;
+    width: 100%;
+}
+
+.dashboard-box {
+    float: left;
+    background-color: #DFDFDF;
+    color: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    height; 130px;
+    width: 32%;
+    text-align: center;
+}
+
+/*.dashboard-box:nth-child(2) {
+    margin-left: 1px;
+}*/
+
+#dashboard-lastdays {
+    background-color: #3476e2;
+}
+
+#dashboard-done {
+    background-color: #13c43f;
+}
+
+#dashboard-doing {
+    background-color: #db1e47;
+}
+
+/* botao de adicionar */
+
+#btn-add {
+    border-radius: 10px;
+}
+
+#add-link {
+    text-decoration: none;
+}
+
+
+.add-div {
+    background-color: #3476e2;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 25px;
+}
+
+.fas.fa plus {
+    color: #FFF;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* busca */
+.fas.fa-search {
+    position: absolute;
+    top: 12px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.search-div {
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Filter */
+.filter-div {
+    margin-bottom: 15px;
+    padding; 0;
+    margin-left: 10px;
+}
+
+#filter{
+    display: inline-block;
+    width: 200px;
+
+
+}
+
+/* lista de tarefas */
+.list-div {
+    padding: 0;
+}
+
+.task-list {
+    padding-left: 0;
+}
+
+.task-item {
+    list-style: none;
+    font-size: 10px;
+    height: 20px;
+    padding: 0 15px;
+    padding-top: 0px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.task-item.done {
+    background-color: #CCC;
+
+}
+
+.fas.fa-trash, .fas.fa-edit, .fas.fa-check {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 10px;
+    float: right;
+}
+
+.fas.fa-trash {
+    color: #db1e47;
+}
+
+.fas.fa-edit {
+    color: #13c43f;
+}
+
+.fas.fa-check {
+    color: #CCC;
+}
+
+.done .fas.fa-check {
+    color: #3476e2;
+}
+
+span {
+    font-size: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    height: 100px;
+    border-top: 2px solid #202020;
+}
+
+footer p{
+    color: #f5f5f5;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+.container-fluid row {
+    margin: 0;
+}
+
+/* Messages */
+
+ul.messages {
+    padding: 0;
+}
+
+ul.messages li {
+    list-style: none;
+}
+
+/* Paginação */
+.pagination {
+    margin-bottom: 20px;
+}
+
+.step-links {
+    position: relative;
+    left: 50%;
+}
+
+.step-links .current {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* login */
+.auth-card {
+    margin-bottom: 30px;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.change-form-p {
+    margin-top: 30px;
+    text-align: center;
+}
